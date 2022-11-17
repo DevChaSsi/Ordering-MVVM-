@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-class AddOrderViewControllers: UIViewController {
+class AddOrderViewController: UIViewController {
     
 }

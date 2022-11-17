@@ -14,6 +14,9 @@
 		DAA59C472921E01E00CC5781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA59C452921E01E00CC5781 /* LaunchScreen.storyboard */; };
 		DAA59C502921E44E00CC5781 /* OrdersTableViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA59C4F2921E44E00CC5781 /* OrdersTableViewControllers.swift */; };
 		DAA59C522921E48E00CC5781 /* AddOrderViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA59C512921E48E00CC5781 /* AddOrderViewControllers.swift */; };
+		DAA59C552922295B00CC5781 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA59C542922295B00CC5781 /* WebService.swift */; };
+		DAA59C5829238DF100CC5781 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA59C5729238DF100CC5781 /* Order.swift */; };
+		DAA59C5B2925D03E00CC5781 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA59C5A2925D03E00CC5781 /* OrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		DAA59C482921E01E00CC5781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA59C4F2921E44E00CC5781 /* OrdersTableViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersTableViewControllers.swift; sourceTree = "<group>"; };
 		DAA59C512921E48E00CC5781 /* AddOrderViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewControllers.swift; sourceTree = "<group>"; };
+		DAA59C542922295B00CC5781 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		DAA59C5729238DF100CC5781 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		DAA59C5A2925D03E00CC5781 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				DAA59C3A2921E01D00CC5781 /* AppDelegate.swift */,
-				DAA59C4E2921E04300CC5781 /* Controllers */,
 				DAA59C3C2921E01D00CC5781 /* SceneDelegate.swift */,
+				DAA59C5629238DC200CC5781 /* Models */,
+				DAA59C532922294C00CC5781 /* Services */,
+				DAA59C592925D02500CC5781 /* ViewModels */,
+				DAA59C4E2921E04300CC5781 /* Controllers */,
 				DAA59C402921E01D00CC5781 /* Main.storyboard */,
 				DAA59C432921E01E00CC5781 /* Assets.xcassets */,
 				DAA59C452921E01E00CC5781 /* LaunchScreen.storyboard */,
@@ -76,6 +85,30 @@
 				DAA59C512921E48E00CC5781 /* AddOrderViewControllers.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DAA59C532922294C00CC5781 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DAA59C542922295B00CC5781 /* WebService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DAA59C5629238DC200CC5781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAA59C5729238DF100CC5781 /* Order.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAA59C592925D02500CC5781 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DAA59C5A2925D03E00CC5781 /* OrderViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA59C5829238DF100CC5781 /* Order.swift in Sources */,
 				DAA59C502921E44E00CC5781 /* OrdersTableViewControllers.swift in Sources */,
 				DAA59C3B2921E01D00CC5781 /* AppDelegate.swift in Sources */,
 				DAA59C3D2921E01D00CC5781 /* SceneDelegate.swift in Sources */,
+				DAA59C552922295B00CC5781 /* WebService.swift in Sources */,
+				DAA59C5B2925D03E00CC5781 /* OrderViewModel.swift in Sources */,
 				DAA59C522921E48E00CC5781 /* AddOrderViewControllers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

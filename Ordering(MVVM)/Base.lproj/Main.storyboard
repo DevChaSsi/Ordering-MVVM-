@@ -71,7 +71,7 @@
                                 <rect key="frame" x="0.0" y="56" width="393" height="391.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="p5H-dX-NYF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoffeeTypeTableViewCell" id="p5H-dX-NYF">
                                         <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p5H-dX-NYF" id="VrG-B7-3w4">
@@ -80,17 +80,13 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="XJJ-dq-hX5" id="DdB-JZ-q26"/>
+                                    <outlet property="delegate" destination="XJJ-dq-hX5" id="Ulm-hZ-ZLO"/>
+                                </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="AhJ-9w-scq">
-                                <rect key="frame" x="93.666666666666686" y="509" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="oHk-Nt-uja">
-                                <rect key="frame" x="96.666666666666686" y="606" width="200" height="74"/>
+                                <rect key="frame" x="96.666666666666686" y="640" width="200" height="74"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qk2-tq-zLI">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
@@ -118,18 +114,29 @@
                         <constraints>
                             <constraint firstItem="gfW-PP-Ip8" firstAttribute="top" secondItem="OEL-ms-b1l" secondAttribute="top" id="6Vn-Gs-rwb"/>
                             <constraint firstItem="gfW-PP-Ip8" firstAttribute="height" secondItem="oCg-9D-NMV" secondAttribute="height" multiplier="0.5" id="7XP-GW-LlD"/>
-                            <constraint firstItem="Qk2-tq-zLI" firstAttribute="top" secondItem="AhJ-9w-scq" secondAttribute="bottom" constant="66" id="9KM-uf-Ec0"/>
                             <constraint firstItem="oHk-Nt-uja" firstAttribute="centerX" secondItem="oCg-9D-NMV" secondAttribute="centerX" id="FLV-Na-eKR"/>
                             <constraint firstItem="gfW-PP-Ip8" firstAttribute="leading" secondItem="OEL-ms-b1l" secondAttribute="leading" id="Hjc-9B-ZB8"/>
                             <constraint firstItem="gfW-PP-Ip8" firstAttribute="width" secondItem="oCg-9D-NMV" secondAttribute="width" id="JPR-QT-moP"/>
-                            <constraint firstItem="AhJ-9w-scq" firstAttribute="centerX" secondItem="oCg-9D-NMV" secondAttribute="centerX" id="NrA-8c-v2l"/>
-                            <constraint firstItem="AhJ-9w-scq" firstAttribute="top" secondItem="gfW-PP-Ip8" secondAttribute="bottom" constant="61.333333333333314" id="cxl-kZ-0NX"/>
+                            <constraint firstItem="OEL-ms-b1l" firstAttribute="bottom" secondItem="oHk-Nt-uja" secondAttribute="bottom" constant="69" id="Xon-qn-xUF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add NewOrder" id="bC2-KZ-xWG">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="w9a-gy-6XI"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="srW-W1-ew3"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="w9a-gy-6XI">
+                            <connections>
+                                <action selector="close:" destination="XJJ-dq-hX5" id="yrm-ky-no7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="srW-W1-ew3">
+                            <connections>
+                                <action selector="save:" destination="XJJ-dq-hX5" id="6Jx-np-bbg"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emailTextField" destination="G19-hg-vif" id="0hL-hd-e1p"/>
+                        <outlet property="nameTextField" destination="Qk2-tq-zLI" id="Xqk-El-kM3"/>
+                        <outlet property="tableView" destination="gfW-PP-Ip8" id="xAM-9v-MRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJt-wR-1D2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

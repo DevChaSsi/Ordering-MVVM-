@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA983CDB299C6156005CBEB0 /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA983CDA299C6156005CBEB0 /* AddCoffeeOrderViewModel.swift */; };
 		DAA59C3B2921E01D00CC5781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA59C3A2921E01D00CC5781 /* AppDelegate.swift */; };
 		DAA59C3D2921E01D00CC5781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA59C3C2921E01D00CC5781 /* SceneDelegate.swift */; };
 		DAA59C422921E01D00CC5781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA59C402921E01D00CC5781 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA983CDA299C6156005CBEB0 /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 		DAA59C372921E01D00CC5781 /* Ordering(MVVM).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ordering(MVVM).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA59C3A2921E01D00CC5781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA59C3C2921E01D00CC5781 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				DAA59C5A2925D03E00CC5781 /* OrderViewModel.swift */,
+				DA983CDA299C6156005CBEB0 /* AddCoffeeOrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA59C5829238DF100CC5781 /* Order.swift in Sources */,
+				DA983CDB299C6156005CBEB0 /* AddCoffeeOrderViewModel.swift in Sources */,
 				DAA59C502921E44E00CC5781 /* OrdersTableViewControllers.swift in Sources */,
 				DAA59C3B2921E01D00CC5781 /* AppDelegate.swift in Sources */,
 				DAA59C3D2921E01D00CC5781 /* SceneDelegate.swift in Sources */,
